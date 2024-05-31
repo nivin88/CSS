@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+}
+/*this is a single-line comment*/ 
+.bluetext{
+    color:orange;
+    background-color: black;
+}
+h4{
+    color:rgb(92, 195, 28);
+    font-family:"monospace";
+    font-size: 70px;width:12;height: 10;
+}
+.wheat{
+    background-color: wheat;
+}
+/*class selection*/
+.greentext{
+    color: green;
+}
+/*child selector*/
+div>p{
+     color: palevioletred;
+}
+div a{
+    color: black;
+    background-color: rgb(27, 214, 214);
+    
+}
+#bye{
+    color: blue;
+    text-align: center;
+    background-color: yellowgreen;
+}
+.textline{
+    text-decoration:underline
+}
+#textshadow{
+    background-image:url(image/css\ image\ 1.jpg);
+    width: 130px;
+    height: 100px;
+}
+.margin{
+    border-style:groove;
+    margin:auto;
+    width: 300px;
+    background-color:skyblue;
+    text-decoration: line-through;
+}
+.ex1{
+    border: 1px orange;
+    outline-style: solid;
+    outline-color: yellowgreen;
+    outline-width: thin;
+}
+.ex2{
+    border: 1px orange;
+    outline-style: solid;
+    outline-color: yellowgreen;
+    outline-width: medium;
+}
+.ex3{
+    border: 1px orange;
+    outline-style: solid;
+    outline-color: yellowgreen;
+    outline-width:thick;
+}
+.ex4{
+    border: 1px orange;
+    outline-style: solid;
+    outline-color: yellowgreen;
+    outline-width: 4px;
+}
+#box{
+    background-color:yellow;
+    width: 300px;
+    border: 20px solid blue;
+    padding: 50px;
+    margin: 20px;
+}           
+
+
