@@ -49,7 +49,7 @@ div a{
     border-style:groove;
     margin:auto;
     width: 300px;
-    background-color:skyblue;
+    background-color:rgb(92, 202, 245);
     text-decoration: line-through;
 }
 .ex1{
@@ -60,28 +60,292 @@ div a{
 }
 .ex2{
     border: 1px orange;
-    outline-style: solid;
-    outline-color: yellowgreen;
+    outline-style:dotted;
+    outline-color:blueviolet;/*blueviolet*/
     outline-width: medium;
 }
 .ex3{
     border: 1px orange;
     outline-style: solid;
-    outline-color: yellowgreen;
+    outline-color:rgb(127, 255, 242);/*aquamarine*/
+    outline: thick ridge red;
     outline-width:thick;
 }
 .ex4{
-    border: 1px orange;
+    border: 1px rgb(0, 255, 115);
     outline-style: solid;
     outline-color: yellowgreen;
     outline-width: 4px;
 }
 #box{
-    background-color:yellow;
+    background-color:rgb(0, 255, 174);
     width: 300px;
-    border: 20px solid blue;
+    border: 12px solid orange;
     padding: 50px;
     margin: 20px;
+}
+ul{
+    list-style-type:circle;
 }           
+ol{
+    list-style-type: disc;
+}
+.blurbox{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    position:relative;
+}
+.yellowbox{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position:absolute;
+    top:100px;
+    left: 100px;
+}
 
+.para1{
+    background-color: rgb(19, 221, 218);
+    
+}
+
+.para2{
+    background-color: aquamarine;
+}
+
+.para3{
+    background-color: palegreen;
+}
+
+#linear{
+    height: 400px;
+    width: 400px;
+    margin:auto;
+    background: radial-gradient(green 10px,yellow,blue);
+}
+#he1{
+    text-align: center;
+    color: red;
+}
+#he2{
+    text-align: left;
+}
+#he3{
+    text-align: right;
+}
+#text4{
+    direction:rtl;
+    unicode-bidi: bidi-override;
+}
+#line5{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 4px;
+}
+.textalign{
+    border:1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    text-align:justify;
+}
+.outerbox{
+    background-color: aqua;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.box{
+    text-align: center;
+    color: blanchedalmond;
+    width: 160px;
+    height: 160px;
+    background-color: red;
+    border: 2px solid aqua;
+}
+.box1{
+    flex: 1 0px;
+}
+.texttransform{
+    text-transform: lowercase;
+}
+.texttransform1{
+    text-transform: uppercase;
+}
+.texttransform2{
+    text-transform: capitalize;
+}
+.spacing{
+    letter-spacing: 6px;
+}
+.spacing2{
+    letter-spacing: -4px;
+}
+.shadow{
+    color:blue;
+    text-shadow: 2px 3px orange;
+}
+.shadow1{
+    color: white;
+    text-shadow: 2px 2px 3px black,0 0 26px blue,0 0 6px darkblue;
+}
+.suriya{
+    font-family: "sofia",sans-serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px yellowgreen;
+}
+.fire{
+    font-family: "sofia",sans-serif;
+    color: white;
+    font-size: 40px;
+    text-shadow: 4px 4px 4  px orchid;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:arial;
+    padding: 10px;
+    background: rgb(219, 220, 209);
+}
+/* header/blogTitle*/
+.header{
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+.header h1{
+    font-size: 50px;
+}
+/*style the top navigation bar*/
+.topnav{
+    overflow:hidden;
+    background-color: orange;
+}
+/*style the topnav links*/
+.topnav a{
+    float: left;
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*change color on hover*/
+.topnav a:hover{
+    background-color: tomato;
+    color: black;
+}
+/*create two unequal colums that next to each other*/
+/*left column*/
+.leftcolumn {
+    float:left;
+    width: 80%;
+}
+/* right column*/
+.rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: rgb(71, 116, 227);
+    padding-left: 30px;
+}
+/* Fake image*/
+.fakeing{
+    background-color: hotpink;
+    width: 100%;
+    padding: 25px;
+}
+/* Add a card effect for articles*/
+.card{
+    background-color: rgb(162, 56, 56);
+    padding: 20px;
+    margin-top: 20px;
+}
+/* clear floats sfter the columns*/
+.row::after{
+    content: "";
+    display: table;
+    clear:both
+}
+/*Footer*/
+.Footer{
+    padding: 25px;
+    text-align: center;
+    background: rgb(195, 85, 162);
+    margin-top: 20px;
+}
+/*Responsive layout -when the screen is less than 800px wide,make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width:800px){
+    .leftcolumn.rightcolumn{
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Responsive layout-when the screen is less than 400px
+wide,make the navigation links stack on top of next to each other*/
+@media screen and (max-width:400px) {
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+}
+.container{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    gap: 20px;
+}
+.para{
+    padding: 1rem;
+    background-color: aqua;
+    color: white;
+}
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.square:hover{
+    background-color: greenyellow;
+    width: 600px;
+}
+.mouse{
+    background-color: orangered;
+    color:antiquewhite;
+    padding: 30px;
+    text-align: center;
+} 
+div:hover{
+    background-color: pink;
+}
+img:hover{
+    opacity: 0.5;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(40, 240, 190);
+}
+li a{
+    display: blockg;
+    color: hotpink;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: aqua;
+    color: azure;
+}
 
