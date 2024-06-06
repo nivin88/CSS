@@ -253,7 +253,7 @@ body{
 }
 /* Fake image*/
 .fakeing{
-    background-color: hotpink;
+    background-color:rgb(228, 116, 135);
     width: 100%;
     padding: 25px;
 }
@@ -306,13 +306,14 @@ wide,make the navigation links stack on top of next to each other*/
     width: 300px;
     height: 300px;
     background-color: aquamarine;
-    transition-duration: 3s;
+    transition-duration: 5s;
     transition-property: all;
     transition-timing-function: linear;
 }
 .square:hover{
     background-color: greenyellow;
     width: 600px;
+    transform: rotate(30deg);
 }
 .mouse{
     background-color: orangered;
@@ -339,7 +340,7 @@ ul{
     background-color: rgb(40, 240, 190);
 }
 li a{
-    display: blockg;
+    display: block;
     color: hotpink;
     padding: 8px 16px;
     text-decoration: none;
@@ -347,5 +348,11 @@ li a{
 li a:hover{
     background-color: aqua;
     color: azure;
+}
+.inherit{
+    border:2px solid rgb(219, 46, 75);
+}
+span{
+    border: inherit;
 }
 
